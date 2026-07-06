@@ -33,3 +33,7 @@ Line 1 is read name.
 Line 2 is nucleotide sequence.
 Line 3 is plus sign.
 Line is quality scores.
+
+## GitHub repository
+
+https://github.com/w886123/rnqseq_intro

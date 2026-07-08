@@ -36,7 +36,7 @@ Line is quality scores.
 
 ## GitHub repository
 
-https://github.com/w886123/rnqseq_intro
+https://github.com/w886123/rnaseq_intro
 
 ## Support gzipped FASTQ
 

@@ -1,0 +1,10 @@
+# temporary outfile files
+data/*_check_v2.tsv
+data/*_check_v3.tsv
+
+# log files
+*.log
+
+# Python cache
+__pycache__/
+*.pyc

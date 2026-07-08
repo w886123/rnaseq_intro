@@ -37,3 +37,12 @@ Line is quality scores.
 ## GitHub repository
 
 https://github.com/w886123/rnqseq_intro
+
+## Support gzipped FASTQ
+
+This script supports both normal FASTQ files and gzipped FASTQ files.
+
+Example for gzipped FASTQ:
+
+bash scripts/check_fastq_length.sh data/example.fastq.gz data/example_gz_check_v3.tsv
+bash scripts/check_fastq_length.sh data/bad_example.fastq.gz data/bad_gz_check_v2.tsv

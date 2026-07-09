@@ -1,0 +1,3 @@
+read_id	seq_len	qual_len	status
+@read1	10	10	OK
+@read2	10	9	ERROR

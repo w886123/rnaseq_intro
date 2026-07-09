@@ -30,4 +30,7 @@ echo "status count output: $count_out" | tee -a "$logfile"
 bash scripts/check_fastq_length.sh "$infile" "$length_out" 2>&1 | tee -a "$logfile"
 bash scripts/count_status.sh "$length_out" "$count_out" 2>&1 | tee -a "$logfile"
 
+echo "check output files" | tee -a "$logfile"
+bash scripts/check_fastq_qc_outputs.sh "$prefix" "$outdir" 2>&1 | tee -a "$logfile"
+
 echo "FASTQ QC pipeline finished" | tee -a "$logfile"

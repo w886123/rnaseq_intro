@@ -54,3 +54,16 @@ This script counts OK and ERROR status from a FASTQ length check result.
 Example:
 
 bash scripts/count_status.sh data/bad_gz_check_v2.tsv data/bad_gz_status_count_by_script.tsv
+
+## Run full FASTQ QC pipeline
+
+This script runs FASTQ length check and status counting together.
+
+Example:
+
+bash scripts/run_fastq_qc.sh data/bad_example.fastq.gz bad_gz results
+
+Output files:
+
+results/bad_gz_length_check.tsv
+results/bad_gz_status_count.tsv

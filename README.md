@@ -46,3 +46,11 @@ Example for gzipped FASTQ:
 
 bash scripts/check_fastq_length.sh data/example.fastq.gz data/example_gz_check_v3.tsv
 bash scripts/check_fastq_length.sh data/bad_example.fastq.gz data/bad_gz_check_v2.tsv
+
+## Count OK and ERROR status
+
+This script counts OK and ERROR status from a FASTQ length check result.
+
+Example:
+
+bash scripts/count_status.sh data/bad_gz_check_v2.tsv data/bad_gz_status_count_by_script.tsv

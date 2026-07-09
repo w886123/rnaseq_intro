@@ -21,12 +21,13 @@ mkdir -p "$outdir"
 
 length_out="${outdir}/${prefix}_length_check.tsv"
 count_out="${outdir}/${prefix}_status_count.tsv"
+logfile="${outdir}/${prefix}_pipeline.log"
 
-echo "input file: $infile"
-echo "length check output: $length_out"
-echo "status count output: $count_out"
+echo "input file: $infile" | tee "$logfile"
+echo "length check output: $length_out" | tee -a "$logfile"
+echo "status count output: $count_out" | tee -a "$logfile"
 
-bash scripts/check_fastq_length.sh "$infile" "$length_out"
-bash scripts/count_status.sh "$length_out" "$count_out"
+bash scripts/check_fastq_length.sh "$infile" "$length_out" 2>&1 | tee -a "$logfile"
+bash scripts/count_status.sh "$length_out" "$count_out" 2>&1 | tee -a "$logfile"
 
-echo "FASTQ QC pipeline finished"
+echo "FASTQ QC pipeline finished" | tee -a "$logfile"

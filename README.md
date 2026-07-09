@@ -67,3 +67,17 @@ Output files:
 
 results/bad_gz_length_check.tsv
 results/bad_gz_status_count.tsv
+
+## Check output files
+
+This script checks whether FASTQ QC output files exist and are not empty.
+
+Example:
+
+bash scripts/check_fastq_qc_outputs.sh bad_gz results
+
+Checked files:
+
+results/bad_gz_length_check.tsv
+results/bad_gz_status_count.tsv
+results/bad_gz_pipeline.log

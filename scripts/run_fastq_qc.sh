@@ -23,6 +23,7 @@ length_out="${outdir}/${prefix}_length_check.tsv"
 count_out="${outdir}/${prefix}_status_count.tsv"
 logfile="${outdir}/${prefix}_pipeline.log"
 
+rm -f "$length_out" "$count_out" "$logfile"
 echo "input file: $infile" | tee "$logfile"
 echo "length check output: $length_out" | tee -a "$logfile"
 echo "status count output: $count_out" | tee -a "$logfile"

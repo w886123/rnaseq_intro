@@ -8,3 +8,7 @@ data/*_check_v3.tsv
 # Python cache
 __pycache__/
 *.pyc
+
+# pipeline result files
+results/*_length_check.tsv
+results/*_status_count.tsv

@@ -12,3 +12,4 @@ __pycache__/
 # pipeline result files
 results/*_length_check.tsv
 results/*_status_count.tsv
+results/*_read_summary.tsv

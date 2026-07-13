@@ -10,9 +10,10 @@ outdir=$2
 
 length_out="${outdir}/${prefix}_length_check.tsv"
 count_out="${outdir}/${prefix}_status_count.tsv"
+read_summary_out="${outdir}/${prefix}_read_summary.tsv"
 logfile="${outdir}/${prefix}_pipeline.log"
 
-for file in "$length_out" "$count_out" "$logfile"; do
+for file in "$length_out" "$count_out" "$read_summary_out" "$logfile"; do
     if [ ! -s "$file" ]; then
         echo "error: output file missing or empty: $file"
         exit 1
